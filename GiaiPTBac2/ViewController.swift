@@ -109,8 +109,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     lblKq2.isHidden = false
                     let x1 = (-b-sqrt(delta))/(2*a)
                     let x2 = (-b+sqrt(delta))/(2*a)
-                    lblKq1.text = "Phuong trinh co nghiem x1 = \(x1)!"
-                    lblKq2.text = "Phuong trinh co nghiem x2 = \(x2)!"
+                    lblKq1.text = "Phuong trinh co nghiem x1 = \(x1)"
+                    lblKq2.text = "Phuong trinh co nghiem x2 = \(x2)"
                 }
             }
         }

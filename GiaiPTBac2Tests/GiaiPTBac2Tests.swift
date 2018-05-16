@@ -1,7 +1,7 @@
 import XCTest
-@testable import GiaiPTBac2_Xcode
+@testable import GiaiPTBac2
 
-class GiaiPTBac2_XcodeTests: XCTestCase {
+class GiaiPTBac2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

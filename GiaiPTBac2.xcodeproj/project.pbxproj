@@ -12,8 +12,8 @@
 		400CCD491E9A53EB00060246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400CCD471E9A53EB00060246 /* Main.storyboard */; };
 		400CCD4B1E9A53EB00060246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400CCD4A1E9A53EB00060246 /* Assets.xcassets */; };
 		400CCD4E1E9A53EB00060246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400CCD4C1E9A53EB00060246 /* LaunchScreen.storyboard */; };
-		400CCD591E9A53EB00060246 /* GiaiPTBac2_XcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CCD581E9A53EB00060246 /* GiaiPTBac2_XcodeTests.swift */; };
-		400CCD641E9A53EB00060246 /* GiaiPTBac2_XcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CCD631E9A53EB00060246 /* GiaiPTBac2_XcodeUITests.swift */; };
+		400CCD591E9A53EB00060246 /* GiaiPTBac2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CCD581E9A53EB00060246 /* GiaiPTBac2Tests.swift */; };
+		400CCD641E9A53EB00060246 /* GiaiPTBac2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CCD631E9A53EB00060246 /* GiaiPTBac2UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +42,10 @@
 		400CCD4D1E9A53EB00060246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400CCD4F1E9A53EB00060246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400CCD541E9A53EB00060246 /* GiaiPTBac2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiaiPTBac2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		400CCD581E9A53EB00060246 /* GiaiPTBac2_XcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiaiPTBac2_XcodeTests.swift; sourceTree = "<group>"; };
+		400CCD581E9A53EB00060246 /* GiaiPTBac2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiaiPTBac2Tests.swift; sourceTree = "<group>"; };
 		400CCD5A1E9A53EB00060246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400CCD5F1E9A53EB00060246 /* GiaiPTBac2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiaiPTBac2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		400CCD631E9A53EB00060246 /* GiaiPTBac2_XcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiaiPTBac2_XcodeUITests.swift; sourceTree = "<group>"; };
+		400CCD631E9A53EB00060246 /* GiaiPTBac2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiaiPTBac2UITests.swift; sourceTree = "<group>"; };
 		400CCD651E9A53EB00060246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 		400CCD571E9A53EB00060246 /* GiaiPTBac2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				400CCD581E9A53EB00060246 /* GiaiPTBac2_XcodeTests.swift */,
+				400CCD581E9A53EB00060246 /* GiaiPTBac2Tests.swift */,
 				400CCD5A1E9A53EB00060246 /* Info.plist */,
 			);
 			path = GiaiPTBac2Tests;
@@ -119,7 +119,7 @@
 		400CCD621E9A53EB00060246 /* GiaiPTBac2UITests */ = {
 			isa = PBXGroup;
 			children = (
-				400CCD631E9A53EB00060246 /* GiaiPTBac2_XcodeUITests.swift */,
+				400CCD631E9A53EB00060246 /* GiaiPTBac2UITests.swift */,
 				400CCD651E9A53EB00060246 /* Info.plist */,
 			);
 			path = GiaiPTBac2UITests;
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400CCD591E9A53EB00060246 /* GiaiPTBac2_XcodeTests.swift in Sources */,
+				400CCD591E9A53EB00060246 /* GiaiPTBac2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400CCD641E9A53EB00060246 /* GiaiPTBac2_XcodeUITests.swift in Sources */,
+				400CCD641E9A53EB00060246 /* GiaiPTBac2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GiaiPTBac2_Xcode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GiaiPTBac2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NIT.GiaiPTBac2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GiaiPTBac2_Xcode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GiaiPTBac2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NIT.GiaiPTBac2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
