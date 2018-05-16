@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  GiaiPTBac2_Xcode
-//
-//  Created by Tran Van Tin on 4/9/17.
-//  Copyright © 2017 Tran Van Tin. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -15,7 +7,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var txtc: UITextField!
     @IBOutlet var lblKq1: UILabel!
     @IBOutlet var lblKq2: UILabel!
-    
     
 
     override func viewDidLoad() {
@@ -68,6 +59,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    @IBAction func ResetAction(_ sender: Any) {
+        Hide()
+        txta.text = ""
+        txtb.text = ""
+        txtc.text = ""
+        lblKq1.text = ""
+        lblKq2.text = ""
+        
+    }
+    func Hide(){
+        lblKq1.isHidden = true
+        lblKq2.isHidden = true
+        
+    }
+   
+    
     
     @IBAction func btnGiai(_ sender: Any) {
         lblKq2.text = ""

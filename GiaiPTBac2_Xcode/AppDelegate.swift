@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  GiaiPTBac2_Xcode
-//
-//  Created by Tran Van Tin on 4/9/17.
-//  Copyright © 2017 Tran Van Tin. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

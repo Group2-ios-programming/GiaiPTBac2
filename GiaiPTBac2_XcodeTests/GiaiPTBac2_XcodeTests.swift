@@ -1,11 +1,3 @@
-//
-//  GiaiPTBac2_XcodeTests.swift
-//  GiaiPTBac2_XcodeTests
-//
-//  Created by Tran Van Tin on 4/9/17.
-//  Copyright © 2017 Tran Van Tin. All rights reserved.
-//
-
 import XCTest
 @testable import GiaiPTBac2_Xcode
 
