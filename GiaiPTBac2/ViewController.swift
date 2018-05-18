@@ -24,39 +24,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let inverseSet = NSCharacterSet(charactersIn:"0123456789").inverted
-        
-        let components = string.components(separatedBy: inverseSet)
-        
-        let filtered = components.joined(separator: "")
-        
-        if filtered == string {
-            return true
-        } else {
-            if string == "." {
-                let countdots = textField.text!.components(separatedBy:".").count - 1
-                if countdots == 0 {
-                    return true
-                }else{
-                    if countdots > 0 && string == "." {
-                        return false
-                    } else {
-                        return true
-                    }
-                }
-            }else{
-                if string == "-" {
-                    if (textField.text!.isEmpty == true){
-                        return true
-                    } else {
-                        return false
-                    }
-                } else {
-                    return false
-                }
-            }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        let aSet = NSCharacterSet(charactersIn: "0123456789.-").inverted
+        let cursor=range.location
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        if ((textField.text?.contains("."))! && compSepByCharInSet[0] == ".") ||
+            ((textField.text?.contains("-"))! && compSepByCharInSet[0] == "-") ||
+            (cursor==0 && compSepByCharInSet[0] == ".") || (cursor != 0 && compSepByCharInSet[0] == "-")
+        {
+            
+            return false
+            
         }
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
+        
+        
     }
 
     @IBAction func ResetAction(_ sender: Any) {
